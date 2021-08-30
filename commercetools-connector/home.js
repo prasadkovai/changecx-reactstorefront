@@ -11,7 +11,7 @@ export default async function home(req, res) {
                     heading: 'Welcome',
                     description: `
                 <p>
-                Enjoy our Commercetools Connector.
+                Connected with Commercetools.
               </p>
               <p>Happy coding!</p>
             `,
