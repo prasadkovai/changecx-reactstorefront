@@ -14,7 +14,10 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     flexDirection: 'column',
     textAlign: 'center',
-    margin: theme.spacing(10, 0, 0, 0),
+    margin: theme.spacing(5, 0, 0, 0),
+  },
+  div_space: {
+    margin: theme.spacing(3, 0, 0, 0),
   },
 }))
 
@@ -24,6 +27,7 @@ export default function Index(lazyProps) {
 
   return (
     <>
+   
       {state.loading ? null : (
         <Head>
           <title>{state.pageData.title}</title>
@@ -34,10 +38,25 @@ export default function Index(lazyProps) {
           <LoadMask fullscreen />
         ) : (
           <div className={classes.main}>
-            <Typography variant="h3" component="h1" gutterBottom color="primary">
+            {/* <Typography variant="h3" component="h1" gutterBottom color="primary">
               {state.pageData.slots.heading}
             </Typography>
-            <CmsSlot>{state.pageData.slots.description}</CmsSlot>
+            <CmsSlot>{state.pageData.slots.description}</CmsSlot> */}
+            <div><img  height="550" width="1100" src="https://images.contentstack.io/v3/assets/blt1fa4edfda0d12352/bltc4648fbefaa55694/6114f8a7d78aee13bd1dbaf4/1.jpg"></img></div>
+          <div className={classes.div_space}><img width="1100" src="https://images.contentstack.io/v3/assets/blt1fa4edfda0d12352/blt760c009b7d649e51/61166cb5d107d613a27e766f/home_2.jpg" ></img></div>
+          <div className={classes.div_space}>
+           <img width="1100" src="https://images.contentstack.io/v3/assets/blt1fa4edfda0d12352/blt14549bcf820ac048/6116712e27dc6a13c46aa1d5/2_1.jpg"></img>
+          </div>
+          <div className={classes.div_space}>
+            <img width="1100" src="https://images.contentstack.io/v3/assets/blt1fa4edfda0d12352/bltb7eb944c57537ec0/6116723260bb0f13c2eacf91/2.jpg"></img>
+          </div>
+          <div className={classes.div_space}>
+            <img width="1100" src="https://images.contentstack.io/v3/assets/blt1fa4edfda0d12352/blt8983e8f3da5e7376/6114fa30f30c8713cf6e4b17/1.jpg"></img>
+          </div>
+          <div className={classes.div_space}>
+            <img width="1100" src=""></img>
+          </div>
+            
           </div>
         )}
       </Container>
